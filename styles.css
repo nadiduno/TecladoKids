@@ -1,0 +1,75 @@
+:root {
+  //Pin Palette
+  --background-color:#adccda;
+  --primary-color: #0063A7; 
+  --secundary-color:#845EC2;
+  --text-color:#94141E;
+  --text2-color:#FF776E;
+  --subtext-color:rgba(0, 0, 0, 0.4);
+}  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arima Madurai', sans-serif;
+  background:var(--background-color);
+  color: var(--text-color);
+}
+
+html {
+  font-style: bold;
+  font-weight: 900;
+  font-size: xx-large; 
+}
+body {
+  background: url(./src/backgroundImg.png);
+  background-size:cover;
+  text-align: center;
+  display:block;
+  align-items:center;
+  justify-content:center;
+  gap:1rem;
+}
+.header{
+  display: flex;
+  align-items:center;
+  justify-content:center;
+}
+.header img{
+  width: 20%;
+  height:20%;
+  margin-top:0.5rem;
+  border-radius: 10px;
+}
+.box {
+  width: min(90vw, 800px);
+  margin: auto;
+  display: block;
+  align-items:center;
+  justify-content:center;
+  text-align: center;
+  padding:0.5rem;
+}
+.title{
+  color: var(--primary-color);
+  font-size: medium; 
+}
+.subtitle{
+  color: var(--secundary-color);
+  font-style: normal;
+  font-weight: 700;
+  font-size: medium; 
+}
+.letra{
+  font-weight: 900;
+}
+/* Responsive */
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 87.5%; /* 14px */
+  }
+  .box{
+    display: box;
+    gap: 2rem;
+  }
+}
